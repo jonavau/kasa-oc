@@ -1,8 +1,9 @@
 import LOGO from '../assets/logo/LOGO.png';
+import '../styles/Header.css';
 
 function Header() {
 	return (
-		<div>
+		<div className="header">
 			<img src={LOGO}></img>
 			<nav>
 				<a href="#">Accueil</a>

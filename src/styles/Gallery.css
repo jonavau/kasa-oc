@@ -1,0 +1,10 @@
+.gallery {
+    width:1240px;
+    background-color: #F6F6F6;
+    height:830px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
