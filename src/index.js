@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
+import './styles/reset.css';
 import App from './components/App';
-import Banner from './components/Banner';
-import Header from './components/Header';
+import './components/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<Header />
 		<App />
-		<Banner />
 	</React.StrictMode>
 );
