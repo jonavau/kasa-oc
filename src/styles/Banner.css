@@ -1,11 +1,25 @@
 .banner {
     display: flex;
     justify-content: center;
+    position: relative;
+    margin: 50px 0;
 }
 
 .banner_img {
     width:1240px;
     height:223px;
-    object-fit: cover;
     border-radius: 25px;
+    object-fit: cover;    
+    z-index: 0;
+    filter: brightness(60%);
+}
+
+
+.banner_text {
+    position: absolute;
+    top:30%;
+    color: #FFFFFF;
+    font-size: 4em;
+    font-family: 'Monserrat';
+    z-index: 1;
 }
