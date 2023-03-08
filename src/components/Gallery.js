@@ -4,7 +4,8 @@ import '../styles/Card.css';
 import logements from '../assets/logements.json';
 
 const ListOfPlaces = logements;
-console.log(ListOfPlaces);
+
+/* la fonction Gallery itère sur le JSON avec map() pour générer des cartes de logements */
 
 function Gallery() {
 	return (
@@ -12,7 +13,7 @@ function Gallery() {
 			{ListOfPlaces.map((logement) => (
 				<div key={logement.id} className="card">
 					<figure>
-						<img src={logement.cover} />
+						<img src={logement.cover} alt={logement.description} />
 						<figcaption>{logement.title}</figcaption>
 					</figure>
 				</div>
