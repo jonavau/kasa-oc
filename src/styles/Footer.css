@@ -1,0 +1,17 @@
+.footer-container {
+    background: #000000;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+}
+.footer_logo {
+    width:122px;
+    height: 40px;
+    margin: 30px 0;
+}
+
+.copyright {
+    margin-bottom: 30px;
+}
