@@ -5,9 +5,9 @@ import logements from '../assets/logements.json';
 
 const ListOfPlaces = logements;
 
-/* la fonction Gallery itère sur le JSON avec map() pour générer des cartes de logements */
+/* la fonction itère sur le JSON avec map() pour générer des cartes de logements */
 
-function Gallery() {
+function Card() {
 	return (
 		<div className="gallery">
 			{ListOfPlaces.map((logement) => (
@@ -22,4 +22,4 @@ function Gallery() {
 	);
 }
 
-export default Gallery;
+export default Card;

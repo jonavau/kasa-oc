@@ -1,6 +1,6 @@
 import Banner from '../Banner';
 import Header from '../Header';
-import Gallery from '../Gallery';
+import Card from '../Card';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from '../NotFound';
@@ -18,7 +18,7 @@ function App() {
 					element={
 						<React.Fragment>
 							<Banner />
-							<Gallery />
+							<Card />
 						</React.Fragment>
 					}
 				/>
