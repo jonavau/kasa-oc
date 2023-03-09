@@ -5,11 +5,17 @@ import '../styles/Banner.css';
 /* composant bannière avec un contenu qui devra changer selon la page ou l'on se trouve */
 
 function Banner() {
+	const wherAmI = window.location.pathname;
 	return (
 		<figure className="banner">
-			<img className="banner_img" src={index_banner}></img>
+			<img
+				className="banner_img"
+				src={wherAmI === '/about_us' ? about_us_banner : index_banner}
+				alt="paysage"
+			></img>
+
 			<figcaption className="banner_text">
-				Chez vous, partout et ailleurs
+				{wherAmI === '/' && 'Chez vous, partout et ailleurs'}
 			</figcaption>
 		</figure>
 	);

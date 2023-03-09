@@ -1,5 +1,5 @@
 .AboutUs {
-    height: 80vh;
+    min-height:calc(100% - 603px);
     display: flex;
     flex-direction: column;
     align-items: center;
