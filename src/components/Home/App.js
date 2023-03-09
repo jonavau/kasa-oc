@@ -22,7 +22,15 @@ function App() {
 						</React.Fragment>
 					}
 				/>
-				<Route path="/about_us" element={<AboutUs />} />
+				<Route
+					path="/about_us"
+					element={
+						<React.Fragment>
+							<Banner />
+							<AboutUs />
+						</React.Fragment>
+					}
+				/>
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
