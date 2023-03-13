@@ -2,21 +2,17 @@ import index_banner from '../assets/banner/index_banner.png';
 import about_us_banner from '../assets/banner/about_us_banner.png'; /* bannière pour page à propos */
 import '../styles/Banner.css';
 
-/* composant bannière avec un contenu qui devra changer selon la page ou l'on se trouve */
+/* composant bannière avec un contenu qui change selon la page ou l'on se trouve */
 
-function Banner() {
-	const wherAmI = window.location.pathname;
+function Banner({ onIndex, bannerText }) {
 	return (
 		<figure className="banner">
 			<img
 				className="banner_img"
-				src={wherAmI === '/about_us' ? about_us_banner : index_banner}
+				src={onIndex ? index_banner : about_us_banner}
 				alt="paysage"
 			></img>
-
-			<figcaption className="banner_text">
-				{wherAmI === '/' && 'Chez vous, partout et ailleurs'}
-			</figcaption>
+			<figcaption className="banner_text">{bannerText}</figcaption>
 		</figure>
 	);
 }
