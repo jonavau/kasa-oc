@@ -1,6 +1,7 @@
 import Host from './host';
 import Ratings from './ratings';
 import Scrolldown from './Scrolldown';
+import Tags from './tags';
 
 function AccomodationPage({
 	liste,
@@ -10,7 +11,7 @@ function AccomodationPage({
 		<div>
 			<p>{liste.name}</p>
 			<p>{liste.location}</p>
-			<p>{liste.tags}</p>
+			<Tags liste={liste} />
 			<Scrolldown title={'Description'} text={liste.description} />
 			<Scrolldown title={'Équipements'} text={liste.equipments} />
 			<Host liste={liste} />
