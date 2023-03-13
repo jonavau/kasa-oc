@@ -1,28 +1,25 @@
+import Host from './host';
+import Ratings from './ratings';
+import Scrolldown from './Scrolldown';
+
 function AccomodationPage({
-	name,
-	location,
-	tags,
-	description,
-	equipments,
-	hostName,
-	hostPicture,
-	ratings,
+	liste,
 	/* J'utilise la destructuration pour générer mes props */
 }) {
 	return (
 		<div>
-			<p>{name}</p>
-			<p>{location}</p>
-			<p>{tags}</p>
-			<p>{description}</p>
-			<p>{equipments}</p>
-			<div>{ratings}</div>
+			<p>{liste.name}</p>
+			<p>{liste.location}</p>
+			<p>{liste.tags}</p>
+			<Scrolldown title={'Description'} text={liste.description} />
+			<Scrolldown title={'Équipements'} text={liste.equipments} />
+			<Host liste={liste} />
+			<Ratings liste={liste} />
 		</div>
 	);
 }
 
-/* je dois itérer sur ma liste de location avec map() pour générer une AccomodationPage par objet */
-/* sans itérer je pourrais créer les composants un a un en faisant </AccomodationPage name='refer',location='frgr'...*/
-/* Je dois itérer pour créer automatiqument chaque page ainsi que son URL ( path='') */
+/* je dois séparer mes élements en composants et les réintégrer à AccomodationPage ensuite */
+/* je dois itérer dans App.js sur ma liste de location avec map() pour générer une AccomodationPage par objet */
 
 export default AccomodationPage;
