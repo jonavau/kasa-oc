@@ -5,32 +5,3 @@
     align-items: center;
     justify-content: center;
 }
-
-.AboutUs_article {
-    width:1024px;
-    margin: 15px;
-}
-
-.AboutUs_title {
-    color:#ffffff;
-    background-color:#FF6060 ;
-    font-size: 24px;
-    border-radius: 5px;
-    padding: 10px 15px;
-    font-weight: lighter;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.dropdown {
-    rotate: 180deg;
-}
-
-.AboutUs_text {
-    color: #FF6060;
-    background-color:#f6f6f6 ;
-    font-size: 24px;
-    border-radius: 5px;
-    padding: 10px 15px;
-}
