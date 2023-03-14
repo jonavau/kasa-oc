@@ -1,0 +1,15 @@
+.carousel {
+    position: relative;
+}
+
+.leftArrow {
+    position:absolute;
+    top:50%;
+    left:25px;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+}
