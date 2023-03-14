@@ -1,8 +1,14 @@
+import '../styles/Host.css';
+
 function Host({ liste }) {
 	return (
-		<div>
+		<div className="host">
 			<p>{liste.host.name}</p>
-			<img src={liste.host.picture} alt={liste.host.name}></img>
+			<img
+				className="host-pic"
+				src={liste.host.picture}
+				alt={liste.host.name}
+			></img>
 		</div>
 	);
 }

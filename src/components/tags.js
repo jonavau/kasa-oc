@@ -1,3 +1,5 @@
+import '../styles/Tags.css';
+
 function Tags({ liste }) {
 	return (
 		<div className="tags">
