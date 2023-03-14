@@ -1,4 +1,6 @@
+import '../styles/Ratings.css';
+
 function Ratings({ liste }) {
-	return <div>{liste.rating}</div>;
+	return <div className="ratings">{liste.rating}</div>;
 }
 export default Ratings;
