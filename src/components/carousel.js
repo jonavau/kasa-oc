@@ -5,27 +5,39 @@ import '../styles/Carousel.css';
 
 function Carousel({ liste }) {
 	const [index, updateIndex] = useState(0);
-
 	console.log(index);
-	return (
+
+	/* réaliser un ternaire si on est sur la derniere image on passage a la premiere et vice versa */
+
+	return liste.pictures[1] !== undefined ? (
 		<div className="carousel">
-			{/* {liste.pictures.map((pic) => (
-				<img alt={liste.description} src={pic}></img>
-			))} */}
 			<img alt={liste.description} src={liste.pictures[index]}></img>
 			<img
-				onClick={() => updateIndex(index - 1)}
+				onClick={
+					index === 0
+						? () => updateIndex(index + liste.pictures.length - 1)
+						: () => updateIndex(index - 1)
+				}
 				src={leftArrow}
 				alt="flèche gauche"
 				className="leftArrow"
 			></img>
 			<img
-				onClick={() => updateIndex(index + 1)}
+				onClick={
+					liste.pictures[index + 1] !== undefined
+						? () => updateIndex(index + 1)
+						: () => updateIndex(index - liste.pictures.length + 1)
+				}
 				src={rightArrow}
 				alt="flèche droite"
 				className="rightArrow"
 			></img>
+			<div className="picNum">
+				{[index + 1]}/{liste.pictures.length}
+			</div>
 		</div>
+	) : (
+		<img alt={liste.description} src={liste.pictures}></img>
 	);
 }
 
