@@ -13,3 +13,11 @@
     top: 50%;
     right: 25px;
 }
+
+.picNum {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    color: #FFFFFF;
+    font-size:18px;
+}

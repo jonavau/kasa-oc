@@ -17,7 +17,7 @@ function AccomodationPage({ liste }) {
 				</div>
 				<div>
 					<Host liste={liste} />
-					<Ratings liste={liste} />
+					<Ratings rating={liste.rating} />
 				</div>
 			</div>
 			<div className="accomodation-details">
