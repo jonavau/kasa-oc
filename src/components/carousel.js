@@ -5,6 +5,7 @@ import '../styles/Carousel.css';
 
 function Carousel({ liste }) {
 	const [index, updateIndex] = useState(0);
+
 	console.log(index);
 	return (
 		<div className="carousel">
