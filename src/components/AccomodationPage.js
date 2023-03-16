@@ -4,6 +4,7 @@ import Scrolldown from './Scrolldown';
 import Tags from './tags';
 import '../styles/Accomodation.css';
 import Carousel from './carousel';
+import Liste from './liste';
 
 function AccomodationPage({ liste }) {
 	return (
@@ -22,7 +23,10 @@ function AccomodationPage({ liste }) {
 			</div>
 			<div className="accomodation-details">
 				<Scrolldown title={'Description'} text={liste.description} />
-				<Scrolldown title={'Équipements'} text={liste.equipments} />
+				<Scrolldown
+					title={'Équipements'}
+					text={<Liste liste={liste} />}
+				/>
 			</div>
 		</div>
 	);

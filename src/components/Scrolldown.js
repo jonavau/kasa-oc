@@ -27,7 +27,7 @@ function Scrolldown({ title, text }) {
 					alt="voir plus"
 				/>
 			</div>
-			<p className="ScrollDown_text">{text}</p>
+			<div className="ScrollDown_text">{text}</div>
 		</div>
 	);
 }

@@ -1,9 +1,16 @@
 .host-pic {
     width:64px;
     height:64px;
-    border-radius: 50%;
+    border-radius: 50%;   
 }
 .host {
     display: flex;
-    flex: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;   
+}
+
+.host p {
+    width: min-content;
+    padding-right: 10px;
 }
