@@ -41,7 +41,11 @@ function Carousel({ liste }) {
 			</div>
 		</div>
 	) : (
-		<img alt={liste.description} src={liste.pictures}></img>
+		<img
+			className="carousel-img"
+			alt={liste.description}
+			src={liste.pictures}
+		></img>
 	);
 }
 

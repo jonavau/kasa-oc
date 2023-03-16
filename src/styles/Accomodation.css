@@ -1,6 +1,6 @@
 .accomodation-page {
-    min-height:calc(100% - 380px);
     width: 1240px;
+    flex: 1;
 }
 
 .accomodation-general-info {
