@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    margin:20px 0 40px 0 ;
 }
 
 .banner_img {
@@ -16,9 +17,8 @@
 
 .banner_text {
     position: absolute;
-    top:30%;
+    top:40%;
     color: #FFFFFF;
-    font-size: 4em;
-    font-family: 'Monserrat';
+    font-size: 48px;
     z-index: 1;
 }

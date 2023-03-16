@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     width:1240px;
-    height: 171px;
+    min-height: 171px;
 }
 
 .header img {
@@ -17,7 +17,7 @@
 }
 
 .header a {
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .header a:visited {
