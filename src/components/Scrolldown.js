@@ -6,27 +6,27 @@ function Scrolldown({ title, text }) {
 	const [isClosed, setIsClosed] = useState(true);
 	return isClosed ? (
 		<div className="ScrollDown_article">
-			<h3 className="ScrollDown_title">
-				{title}
+			<div className="ScrollDown_title">
+				<h2>{title}</h2>
 				<img
 					className="dropdown"
 					onClick={() => setIsClosed(false)}
 					src={vector}
 					alt="voir plus"
 				/>
-			</h3>
+			</div>
 		</div>
 	) : (
 		<div className="ScrollDown_article">
-			<h3 className="ScrollDown_title">
-				{title}
+			<div className="ScrollDown_title">
+				<h2>{title}</h2>
 				<img
 					className="dropdownCollapse"
 					onClick={() => setIsClosed(true)}
 					src={vector}
 					alt="voir plus"
 				/>
-			</h3>
+			</div>
 			<p className="ScrollDown_text">{text}</p>
 		</div>
 	);

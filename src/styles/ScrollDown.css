@@ -8,17 +8,27 @@
 .ScrollDown_title {
     color:#ffffff;
     background-color:#FF6060 ;
-    font-size: 24px;
     border-radius: 5px;
     padding: 10px 15px;
-    font-weight: lighter;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
 }
+
+.ScrollDown_title h2 {
+    font-weight: 500;
+}
+
 
 .dropdownCollapse {
     rotate: 180deg;
+}
+
+.dropdownCollapse, .dropdown {
+    height: 16px;
+    width: 24px;
 }
 
 .ScrollDown_text {
@@ -26,5 +36,5 @@
     background-color:#f6f6f6 ;
     font-size: 24px;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 22px 15px 10px 15px;
 }

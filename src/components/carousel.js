@@ -5,13 +5,17 @@ import '../styles/Carousel.css';
 
 function Carousel({ liste }) {
 	const [index, updateIndex] = useState(0);
-	console.log(index);
 
-	/* réaliser un ternaire si on est sur la derniere image on passage a la premiere et vice versa */
+	/* réalise un ternaire si on est sur la derniere image on passe a la premiere et vice versa */
+	/* sinon incrémente ou décremente simplement */
 
 	return liste.pictures[1] !== undefined ? (
 		<div className="carousel">
-			<img alt={liste.description} src={liste.pictures[index]}></img>
+			<img
+				className="carousel-img"
+				alt={liste.description}
+				src={liste.pictures[index]}
+			></img>
 			<img
 				onClick={
 					index === 0
@@ -37,7 +41,11 @@ function Carousel({ liste }) {
 			</div>
 		</div>
 	) : (
-		<img alt={liste.description} src={liste.pictures}></img>
+		<img
+			className="carousel-img"
+			alt={liste.description}
+			src={liste.pictures}
+		></img>
 	);
 }
 
