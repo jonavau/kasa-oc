@@ -9,7 +9,7 @@ function Carousel({ liste }) {
 	/* réalise un ternaire si on est sur la derniere image on passe a la premiere et vice versa */
 	/* sinon incrémente ou décremente simplement */
 
-	return liste.pictures[1] !== undefined ? (
+	return liste.pictures.length > 1 ? (
 		<div className="carousel">
 			<img
 				className="carousel-img"
