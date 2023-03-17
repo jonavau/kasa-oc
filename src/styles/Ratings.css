@@ -6,3 +6,12 @@
 .ratings img {
     padding: 5px;
 }
+
+@media (max-width:1240px) {
+    .ratings img {
+        width: 15px;
+        height: 15px;
+        padding: 0;
+        margin-right: 5px;
+    }
+}

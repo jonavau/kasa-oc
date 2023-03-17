@@ -17,6 +17,10 @@
     font-size: 18px;
 }
 
+.accomodation-details .ScrollDown_article {
+    width: 48% ;
+}
+
 .accomodation-details h2 {
     font-size: 18px;
 }
@@ -34,4 +38,41 @@
 
 .accomodation-name-place h3 {
     font-size: 18px;
+}
+
+@media (max-width:1240px) {
+    .accomodation-page {
+        width: 95%;
+    }
+    .accomodation-name-place h2 {
+        font-size:18px ;
+    }
+    .accomodation-name-place h3 {
+        font-size: 14px;
+    }
+
+    .accomodation-general-info {
+        flex-direction: column;
+    }
+
+    .accomodation-details {
+        flex-direction: column;
+    }
+
+    .accomodation-details .ScrollDown_article {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .ScrollDown_article h2 {
+        font-size: 13px;
+    }
+
+    .host-and-ratings {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 }

@@ -30,4 +30,18 @@
     font-size:18px;
 }
 
-/*responsve: pas de PicNUm SUR MOBILE ! */
+
+@media (max-width:1240px) {
+    .picNum {
+        display: none;
+    }
+
+    .leftArrow , .rightArrow {
+        height:22px;
+        top:50%;
+    }
+
+    .carousel-img {
+        height: 255px;
+    }
+}
