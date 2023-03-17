@@ -10,3 +10,16 @@
 .AboutUs h2 {
     font-size: 24px;
 }
+
+@media (max-width:1240px) {
+    .AboutUs h2 {
+        font-size: 13px;
+    }
+    .AboutUs {
+        font-size: 12px;
+    }
+
+    .banner_tall {
+        height:223px;
+    }
+}
