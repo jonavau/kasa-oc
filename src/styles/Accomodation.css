@@ -1,6 +1,7 @@
 .accomodation-page {
     width: 1240px;
     flex: 1;
+    color:#FF6060
 }
 
 .accomodation-general-info {
@@ -13,4 +14,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 18px;
+}
+
+.accomodation-details h2 {
+    font-size: 18px;
+}
+
+.accomodation-name-place h2, h3{
+    font-weight:500 ;
+}
+.accomodation-name-place{
+    margin: 20px 0;
+}
+
+.accomodation-name-place h2 {
+    font-size:36px;
+}
+
+.accomodation-name-place h3 {
+    font-size: 18px;
 }

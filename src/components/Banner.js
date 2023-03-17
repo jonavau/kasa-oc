@@ -8,7 +8,7 @@ function Banner({ onIndex, bannerText }) {
 	return (
 		<figure className="banner">
 			<img
-				className="banner_img"
+				className={onIndex ? 'banner_img' : 'banner_img banner_tall'}
 				src={onIndex ? index_banner : about_us_banner}
 				alt="paysage"
 			></img>

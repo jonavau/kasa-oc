@@ -1,19 +1,20 @@
 
-
 .ScrollDown_article {
-    width:1024px;
-    margin: 15px;
+    width:70%;
+    margin: 15px 0;
+    
 }
 
 .ScrollDown_title {
     color:#ffffff;
     background-color:#FF6060 ;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 10px 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
 
 }
 
@@ -34,7 +35,12 @@
 .ScrollDown_text {
     color: #FF6060;
     background-color:#f6f6f6 ;
-    font-size: 24px;
     border-radius: 5px;
     padding: 22px 15px 10px 15px;
+}
+
+@media (max-width:1240px) {
+    .ScrollDown_article {
+        width: 95%;
+    }
 }

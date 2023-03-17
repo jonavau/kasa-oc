@@ -3,4 +3,23 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
+    width: 100%;
+    font-size: 24px;
+}
+
+.AboutUs h2 {
+    font-size: 24px;
+}
+
+@media (max-width:1240px) {
+    .AboutUs h2 {
+        font-size: 13px;
+    }
+    .AboutUs {
+        font-size: 12px;
+    }
+
+    .banner_tall {
+        height:223px;
+    }
 }

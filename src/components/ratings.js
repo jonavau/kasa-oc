@@ -2,9 +2,7 @@ import '../styles/Ratings.css';
 import emptyStar from '../assets/emptystar.png';
 import fullStar from '../assets/fullstar.png';
 
-/* fonction qui prendrait le rating en argument et renvoit la div correspondante */
-/* Devrait fonctionner même avec un changement dynamique des notes? puisque le composant
-utilise le rating de la base de donnée */
+/* fonction qui prendrait le rating en props et renvoit la div correspondante */
 
 function Ratings({ rating }) {
 	return rating === '1' ? (
