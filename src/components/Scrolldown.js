@@ -8,30 +8,18 @@ recliquer sur la flèche pour collapse */
 
 function Scrolldown({ title, text }) {
 	const [isClosed, setIsClosed] = useState(true);
-	return isClosed ? (
+	return (
 		<div className="ScrollDown_article">
 			<div className="ScrollDown_title">
 				<h2>{title}</h2>
 				<img
-					className="dropdown"
-					onClick={() => setIsClosed(false)}
+					className={isClosed ? 'dropdown' : 'dropdownCollapse'}
+					onClick={() => setIsClosed(!isClosed)}
 					src={vector}
 					alt="voir plus"
 				/>
 			</div>
-		</div>
-	) : (
-		<div className="ScrollDown_article">
-			<div className="ScrollDown_title">
-				<h2>{title}</h2>
-				<img
-					className="dropdownCollapse"
-					onClick={() => setIsClosed(true)}
-					src={vector}
-					alt="voir plus"
-				/>
-			</div>
-			<div className="ScrollDown_text">{text}</div>
+			{!isClosed && <div className="ScrollDown_text">{text}</div>}
 		</div>
 	);
 }

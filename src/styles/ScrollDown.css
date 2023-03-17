@@ -30,6 +30,7 @@
 .dropdownCollapse, .dropdown {
     height: 16px;
     width: 24px;
+    cursor: pointer;
 }
 
 .ScrollDown_text {
