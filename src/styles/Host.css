@@ -13,4 +13,19 @@
 .host p {
     width: min-content;
     padding-right: 10px;
+    font-size: 18px;
+}
+
+@media (max-width:1240px) {
+    .host {
+        margin:5px 0;
+    }
+    .host p {
+        font-size: 12px;
+    }
+
+    .host-pic {
+        height: 32px;
+        width: 32px;
+    }
 }

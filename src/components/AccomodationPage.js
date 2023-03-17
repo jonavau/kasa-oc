@@ -16,7 +16,7 @@ function AccomodationPage({ liste }) {
 					<h3>{liste.location}</h3>
 					<Tags liste={liste} />
 				</div>
-				<div>
+				<div className="host-and-ratings">
 					<Host liste={liste} />
 					<Ratings rating={liste.rating} />
 				</div>
