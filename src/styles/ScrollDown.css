@@ -2,6 +2,7 @@
 
 .ScrollDown_article {
     width:47%;
+    margin: 15px 0;
     
 }
 
@@ -20,7 +21,6 @@
 
 .ScrollDown_title h2 {
     font-weight: 500;
-    font-size: 18px;
 }
 
 
@@ -36,7 +36,6 @@
 .ScrollDown_text {
     color: #FF6060;
     background-color:#f6f6f6 ;
-    font-size: 24px;
     border-radius: 5px;
     padding: 22px 15px 10px 15px;
 }
