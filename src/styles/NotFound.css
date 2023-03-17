@@ -21,9 +21,21 @@
 
 .NotFound .Link {
     text-decoration: underline;
-    margin: 100px;
+    margin: 100px 0;
 }
 
 .NotFound .Link:visited {
     color: #FF6060;
+}
+
+@media (max-width:1240px) {
+    .NotFound h1 {
+        font-size: 96px;
+        margin: 10px;
+    }
+    .NotFound h2 {
+        font-size: 18px;
+        margin: 10px;
+        width: 220px;
+    }
 }
