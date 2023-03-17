@@ -28,3 +28,22 @@
 .header a:hover {
     text-decoration: underline;
 }
+
+@media (max-width:1240px) {
+    .header {
+        width: 95%;
+    }
+
+    .header img {
+        height:3vh;
+    }
+
+    .header nav {
+    font-size: 12px;
+    
+}
+.header a {
+    margin-left: 10px;
+    text-transform:uppercase;
+}
+}
