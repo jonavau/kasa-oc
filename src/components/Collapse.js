@@ -9,12 +9,14 @@ recliquer sur la flèche pour collapse */
 function Collapse({ title, text }) {
 	const [isClosed, setIsClosed] = useState(true);
 	return (
-		<div className="ScrollDown_article">
+		<div
+			onClick={() => setIsClosed(!isClosed)}
+			className="ScrollDown_article"
+		>
 			<div className="ScrollDown_title">
 				<h2>{title}</h2>
 				<img
 					className={isClosed ? 'dropdown' : 'dropdownCollapse'}
-					onClick={() => setIsClosed(!isClosed)}
 					src={down_arrow}
 					alt="voir plus"
 				/>
