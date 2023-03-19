@@ -1,4 +1,4 @@
-import vector from '../assets/Vector.png';
+import down_arrow from '../assets/down_arrow.png';
 import '../styles/ScrollDown.css';
 import { useState } from 'react';
 
@@ -15,7 +15,7 @@ function Scrolldown({ title, text }) {
 				<img
 					className={isClosed ? 'dropdown' : 'dropdownCollapse'}
 					onClick={() => setIsClosed(!isClosed)}
-					src={vector}
+					src={down_arrow}
 					alt="voir plus"
 				/>
 			</div>
