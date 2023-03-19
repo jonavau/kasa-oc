@@ -1,10 +1,10 @@
-import Host from './host';
-import Ratings from './ratings';
+import Host from './Host';
+import Ratings from './Ratings';
 import Scrolldown from './Scrolldown';
-import Tags from './tags';
+import Tags from './Tags';
 import '../styles/Accomodation.css';
-import Carousel from './carousel';
-import Liste from './liste';
+import Carousel from './Carousel';
+import Liste from './List';
 
 function AccomodationPage({ liste }) {
 	return (
