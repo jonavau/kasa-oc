@@ -1,6 +1,6 @@
 import Host from './Host';
 import Ratings from './Ratings';
-import Scrolldown from './Scrolldown';
+import Collapse from './Collapse';
 import Tags from './Tags';
 import '../styles/Accomodation.css';
 import Carousel from './Carousel';
@@ -22,8 +22,8 @@ function AccomodationPage({ liste }) {
 				</div>
 			</div>
 			<div className="accomodation-details">
-				<Scrolldown title={'Description'} text={liste.description} />
-				<Scrolldown
+				<Collapse title={'Description'} text={liste.description} />
+				<Collapse
 					title={'Équipements'}
 					text={<Liste liste={liste} />}
 				/>

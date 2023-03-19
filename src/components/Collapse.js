@@ -6,7 +6,7 @@ import { useState } from 'react';
 state change et contenu de la div change et affiche le texte en dessous, on peut ensuite
 recliquer sur la flèche pour collapse */
 
-function Scrolldown({ title, text }) {
+function Collapse({ title, text }) {
 	const [isClosed, setIsClosed] = useState(true);
 	return (
 		<div className="ScrollDown_article">
@@ -24,4 +24,4 @@ function Scrolldown({ title, text }) {
 	);
 }
 
-export default Scrolldown;
+export default Collapse;
