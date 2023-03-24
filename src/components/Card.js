@@ -1,11 +1,17 @@
+import { useNavigate } from 'react-router-dom';
+
 function Card({ logement }) {
+	const navigate = useNavigate();
 	return (
-		<a className="card" href={`./${logement.id}`}>
+		<div
+			className="card"
+			onClick={() => navigate(`/logement/${logement.id}`)}
+		>
 			<figure>
 				<img src={logement.cover} alt={logement.description} />
 				<figcaption>{logement.title}</figcaption>
 			</figure>
-		</a>
+		</div>
 	);
 }
 
