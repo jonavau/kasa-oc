@@ -25,7 +25,8 @@
     color:#FF6060;    
 }
 
-.header a:hover {
+
+.active{
     text-decoration: underline;
 }
 

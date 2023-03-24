@@ -32,7 +32,4 @@ function AccomodationPage({ liste }) {
 	);
 }
 
-/* je dois séparer mes élements en composants et les réintégrer à AccomodationPage ensuite */
-/* je dois itérer dans App.js sur ma liste de location avec map() pour générer une AccomodationPage par objet */
-
 export default AccomodationPage;
